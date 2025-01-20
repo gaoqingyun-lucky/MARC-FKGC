@@ -73,11 +73,13 @@ python main_QR_complex_relation.py --dataset FB15K-One --data_path ./FB15K --epo
 ```
 2 NELL-One
 ```bash
+cd ./MARC_MetaR
 python main_QR_complex_relation.py --dataset NELL-One --data_path ./Nell-HiRe --epoch 10000 --few 1 --embed_dim 100 --latent_num 5 --data_form Pre-Train --prefix MetaR_QR_CR_latent5_Nellfew1_exp1
 python main_QR_complex_relation.py --dataset NELL-One --data_path ./Nell-HiRe --epoch 10000 --few 5 --embed_dim 100 --latent_num 5 --data_form Pre-Train --prefix MetaR_QR_CR_latent5_Nellfew5_exp1
 ```
 3 Wiki-One
 ```bash
+cd ./MARC_MetaR
 python main_QR_complex_relation.py --dataset Wiki-One --data_path ./Wiki --epoch 10000 --few 1 --embed_dim 50 --latent_num 5 --data_form Pre-Train --prefix MetaR_QR_CR_latent5_Wikifew1_exp1
 python main_QR_complex_relation.py --dataset Wiki-One --data_path ./Wiki --epoch 10000 --few 5 --embed_dim 50 --latent_num 5 --data_form Pre-Train --prefix MetaR_QR_CR_latent5_Wikifew5_exp1
 ```
@@ -130,11 +132,13 @@ python main_QR_complex_relation.py --dataset FB15K-One --data_path ./FB15K  --fe
 ```
 2 NELL
 ```bash
+cd ./MARC_MetaR
 python main_QR_complex_relation.py --dataset NELL-One --data_path ./Nell-HiRe --few 1 --embed_dim 100 --latent_num 5 --data_form Pre-Train --prefix MetaR_QR_CR_latent5_Nellfew1_exp1 --eval_ckpt 1000 --step test 
 python main_QR_complex_relation.py --dataset NELL-One --data_path ./Nell-HiRe   --few 5 --embed_dim 100 --latent_num 5 --data_form Pre-Train --prefix MetaR_QR_CR_latent5_Nellfew5_exp1 --eval_ckpt 1000 --step test
 ```
 3 Wiki-One
 ```bash
+cd ./MARC_MetaR
 python main_QR_complex_relation.py --dataset Wiki-One --data_path ./Wiki --few 1 --embed_dim 50 --latent_num 5 --data_form Pre-Train --prefix MetaR_QR_CR_latent5_Wikifew1_exp1 --eval_ckpt 1000 --step test 
 python main_QR_complex_relation.py --dataset Wiki-One --data_path ./Wiki   --few 5 --embed_dim 50 --latent_num 5 --data_form Pre-Train --prefix MetaR_QR_CR_latent5_Wikifew5_exp1  --eval_ckpt 1000 --step test 
 ``` 
