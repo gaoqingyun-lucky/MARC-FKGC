@@ -100,12 +100,14 @@ Download the checkpoint and extract to the `state/` folder.
 *FB15K-237
 ```bash
 cd ./MARC_NPFKGC
+python main_SVD_complex_relation.py --dataset FB15K-One --data_path --epoch 10000 ../dataset/FB15K --few 1 --embed_dim 100 --latent_num 5 --data_form Pre-Train --prefix QR_CR_latent5_FB15Kfew1_exp1 --step test
 python main_SVD_complex_relation.py --dataset FB15K-One --data_path --epoch 10000 ../dataset/FB15K --few 5 --embed_dim 100 --latent_num 5 --data_form Pre-Train --prefix QR_CR_latent5_FB15Kfew5_exp1 --step test
 ```
 
 *NELL
 ```bash
 cd ./MARC_NPFKGC
+python main_SVD_complex_relation.py --dataset NELL-One --data_path --epoch 10000 ../dataset/Nell-HiRe --few 1 --embed_dim 100 --latent_num 5 --data_form Pre-Train --prefix QR_CR_latent5_Nellfew1_exp1 --step test
 python main_SVD_complex_relation.py --dataset NELL-One --data_path --epoch 10000 ../dataset/Nell-HiRe --few 5 --embed_dim 100 --latent_num 5 --data_form Pre-Train --prefix QR_CR_latent5_Nellfew5_exp1 --step test
 ```
 ### MARC-MetaR
