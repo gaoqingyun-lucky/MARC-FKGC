@@ -157,13 +157,6 @@ python main_QR_complex_relation.py --dataset Wiki-One --data_path ./Wiki   --few
 
 ## Results
 ### 1-shot FKGC results
-* MARC-MetaR
-
-| Dataset | MRR   | Hits@10 | Hits@5 | Hits@1 |
-| ------- |-------|---------|--------|--------|
-| FB15K-237   | 0.507 | 0.675   | 0.621  | 0.409  |
-| NELL    | 0.314 | 0.388   | 0.340  | 0.276  |
-
 * MARC-NP-FKGC
 
 | Dataset | MRR   | Hits@10 | Hits@5 | Hits@1 |
@@ -171,7 +164,22 @@ python main_QR_complex_relation.py --dataset Wiki-One --data_path ./Wiki   --few
 | FB15K-237   | 0.555 | 0.787   | 0.729  | 0.401 |
 | NELL    | 0.464 | 0.530   | 0.506  | 0.429  |
 
+* MARC-MetaR
+
+| Dataset | MRR   | Hits@10 | Hits@5 | Hits@1 |
+| ------- |-------|---------|--------|--------|
+| FB15K-237   | 0.507 | 0.675   | 0.621  | 0.409  |
+| NELL    | 0.314 | 0.388   | 0.340  | 0.276  |
+
+
+
 ### 5-shot FKGC results
+* MARC-NP-FKGC
+
+| Dataset | MRR   | Hits@10 | Hits@5 | Hits@1 |
+| ------- | ----- | ------- | ------ | ------ |
+| FB15K-237   | 0.590 | 0.827   | 0.759  | 0.452 |
+| NELL    | 0.437 | 0.507   | 0.473  | 0.400  |
 
 * MARC-MetaR
 
@@ -180,14 +188,9 @@ python main_QR_complex_relation.py --dataset Wiki-One --data_path ./Wiki   --few
 | FB15K-237   | 0.542 | 0.753   | 0.695  | 0.415  |
 | NELL    | 0.390 | 0.436   | 0.411  | 0.359  |
 
-* MARC-NP-FKGC
 
-| Dataset | MRR   | Hits@10 | Hits@5 | Hits@1 |
-| ------- | ----- | ------- | ------ | ------ |
-| FB15K-237   | 0.590 | 0.827   | 0.759  | 0.452 |
-| NELL    | 0.437 | 0.507   | 0.473  | 0.400  |
 
-See full results in our paper.
+See the full results in our paper.
 
 [//]: # (## Citations)
 
