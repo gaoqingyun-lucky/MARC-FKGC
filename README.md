@@ -36,7 +36,7 @@ Note: Please make sure `dgl==0.9.0` and use CUDA, our codes rely on a small [bug
 Download the datasets and extract to the project root folder.  
 
 ##  Train (1-shot and 5-shot)
-### MARC-NP-FKGC
+### 1 MARC-NP-FKGC
 * FB15K-237
 ```bash
 cd ./MARC_NPFKGC
@@ -50,7 +50,7 @@ cd ./MARC_NPFKGC
 python main_SVD_complex_relation.py --dataset NELL-One --data_path ../dataset/Nell-HiRe --epoch 10000 --few 1 --embed_dim 100 --latent_num 5 --data_form Pre-Train --prefix QR_CR_latent5_Nellfew1_exp1
 python main_SVD_complex_relation.py --dataset NELL-One --data_path ../dataset/Nell-HiRe --epoch 10000 --few 5 --embed_dim 100 --latent_num 5 --data_form Pre-Train --prefix QR_CR_latent5_Nellfew5_exp1
 ```
-### MARC-MetaR
+### 2 MARC-MetaR
 * FB15K-237
 ```bash
 cd ./MARC_NPFKGC
@@ -64,7 +64,7 @@ cd ./MARC_NPFKGC
 python main_MetaR_SVD_complex_relation.py --dataset NELL-One --data_path ../dataset/Nell-HiRe --epoch 10000 --few 1 --embed_dim 100 --latent_num 5 --data_form Pre-Train --prefix MetaR_QR_CR_latent5_Nellfew1_exp1
 python main_MetaR_SVD_complex_relation.py --dataset NELL-One --data_path ../dataset/Nell-HiRe --epoch 10000 --few 5 --embed_dim 100 --latent_num 5 --data_form Pre-Train --prefix MetaR_QR_CR_latent5_Nellfew5_exp1
 ```
-### MARC-MetaR w/o MNEA
+### 3 MARC-MetaR w/o MNEA
 * FB15K-237
 ```bash
 cd ./MARC_MetaR
@@ -96,7 +96,7 @@ python main_QR_complex_relation.py --dataset Wiki-One --data_path ./Wiki --epoch
 
 ## Eval (1-shot and 5-shot)
 Download the checkpoint and extract to the `state/` folder.
-### MARC-NP-FKGC
+### 1 MARC-NP-FKGC
 * FB15K-237
 ```bash
 cd ./MARC_NPFKGC
@@ -110,7 +110,7 @@ cd ./MARC_NPFKGC
 python main_SVD_complex_relation.py --dataset NELL-One --data_path --epoch 10000 ../dataset/Nell-HiRe --few 1 --embed_dim 100 --latent_num 5 --data_form Pre-Train --prefix QR_CR_latent5_Nellfew1_exp1 --step test
 python main_SVD_complex_relation.py --dataset NELL-One --data_path --epoch 10000 ../dataset/Nell-HiRe --few 5 --embed_dim 100 --latent_num 5 --data_form Pre-Train --prefix QR_CR_latent5_Nellfew5_exp1 --step test
 ```
-### MARC-MetaR
+### 2 MARC-MetaR
 * FB15K-237
 ```bash
 cd ./MARC_NPFKGC
@@ -125,7 +125,7 @@ python main_MetaR_SVD_complex_relation.py --dataset NELL-One --data_path ../data
 python main_MetaR_SVD_complex_relation.py --dataset NELL-One --data_path ../dataset/Nell-HiRe  --few 5 --embed_dim 100 --latent_num 5 --data_form Pre-Train --prefix MetaR_QR_CR_latent5_Nellfew5_exp1 --step test
 ```
 
-### MARC-MetaR w/o MNEA
+### 3 MARC-MetaR w/o MNEA
 * FB15K-237
 ```bash
 cd ./MARC_MetaR
