@@ -21,7 +21,6 @@ Note: Please make sure `dgl==0.9.0` and use CUDA, our codes rely on a small [bug
 
 ## Environment
 * python 3.8
-* Ubuntu 22.04
 * RTX 4096
 * Memory 128G
 
