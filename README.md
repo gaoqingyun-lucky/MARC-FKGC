@@ -26,8 +26,9 @@ Note: Please make sure `dgl==0.9.0` and use CUDA, our codes rely on a small [bug
 
 ## Dataset & Checkpoint
 ### Original Dataset
-* [NELL/WIKI](https://github.com/xwhan/One-shot-Relational-Learning)
+* [NELL](https://github.com/xwhan/One-shot-Relational-Learning)
 * [FB15K-237](https://github.com/SongW-SW/REFORM)
+* [YAGO3-10](https://github.com/pat-jj/KG-FIT)
 ### Processed Dataset
 * [Dataset](https://drive.google.com/drive/u/0/folders/1vN1AMapGZaUnQ4c7gPiBmO_nB6vvhj1c)
 * [Checkpoint](https://drive.google.com/drive/u/0/folders/1gpHkQDgr5KzAXptl_fa1pATvk__prYUc)
