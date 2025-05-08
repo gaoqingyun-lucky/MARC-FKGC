@@ -64,35 +64,6 @@ cd ./MARC_NPFKGC
 python main_MetaR_SVD_complex_relation.py --dataset NELL-One --data_path ../dataset/Nell-HiRe --epoch 10000 --few 1 --embed_dim 100 --latent_num 5 --data_form Pre-Train --prefix MetaR_QR_CR_latent5_Nellfew1_exp1
 python main_MetaR_SVD_complex_relation.py --dataset NELL-One --data_path ../dataset/Nell-HiRe --epoch 10000 --few 5 --embed_dim 100 --latent_num 5 --data_form Pre-Train --prefix MetaR_QR_CR_latent5_Nellfew5_exp1
 ```
-### 3 MARC-MetaR w/o MNEA
-* FB15K-237
-```bash
-cd ./MARC_MetaR
-python main_QR_complex_relation.py --dataset FB15K-One --data_path ./FB15K --epoch 10000 --few 1 --embed_dim 100 --latent_num 5 --data_form Pre-Train --prefix QR_CR_latent5_FB15K_few1_exp1
-python main_QR_complex_relation.py --dataset FB15K-One --data_path ./FB15K --epoch 10000 --few 5 --embed_dim 100 --latent_num 5 --data_form Pre-Train --prefix QR_CR_latent5_FB15K_few5_exp1
-```
-* NELL-One
-```bash
-cd ./MARC_MetaR
-python main_QR_complex_relation.py --dataset NELL-One --data_path ./Nell-HiRe --epoch 10000 --few 1 --embed_dim 100 --latent_num 5 --data_form Pre-Train --prefix MetaR_QR_CR_latent5_Nellfew1_exp1
-python main_QR_complex_relation.py --dataset NELL-One --data_path ./Nell-HiRe --epoch 10000 --few 5 --embed_dim 100 --latent_num 5 --data_form Pre-Train --prefix MetaR_QR_CR_latent5_Nellfew5_exp1
-```
-* Wiki-One
-```bash
-cd ./MARC_MetaR
-python main_QR_complex_relation.py --dataset Wiki-One --data_path ./Wiki --epoch 10000 --few 1 --embed_dim 50 --latent_num 5 --data_form Pre-Train --prefix MetaR_QR_CR_latent5_Wikifew1_exp1
-python main_QR_complex_relation.py --dataset Wiki-One --data_path ./Wiki --epoch 10000 --few 5 --embed_dim 50 --latent_num 5 --data_form Pre-Train --prefix MetaR_QR_CR_latent5_Wikifew5_exp1
-```
-
-[//]: # (WIKI)
-
-[//]: # (```bash)
-
-[//]: # (python main.py --dataset Wiki-One --data_path ./Wiki --few 5 --data_form Pre-Train --prefix np_rgcn_attn_planar_wiki_5shot_intrain_g_batch_1024_eval_8 --device 0 --batch_size 64 --flow Planar -dim 50 --g_batch 1024 --eval_batch 8 --eval_epoch 4000)
-
-[//]: # (```)
-
-
 
 ## Eval (1-shot and 5-shot)
 Download the checkpoint and extract to the `state/` folder.
@@ -125,33 +96,7 @@ python main_MetaR_SVD_complex_relation.py --dataset NELL-One --data_path ../data
 python main_MetaR_SVD_complex_relation.py --dataset NELL-One --data_path ../dataset/Nell-HiRe  --few 5 --embed_dim 100 --latent_num 5 --data_form Pre-Train --prefix MetaR_QR_CR_latent5_Nellfew5_exp1 --step test
 ```
 
-### 3 MARC-MetaR w/o MNEA
-* FB15K-237
-```bash
-cd ./MARC_MetaR
-python main_QR_complex_relation.py --dataset FB15K-One --data_path ./FB15K --few 1 --embed_dim 100 --latent_num 5 --data_form Pre-Train --prefix QR_CR_latent5_FB15K_few1_exp1 --eval_ckpt 1000 --step test 
-python main_QR_complex_relation.py --dataset FB15K-One --data_path ./FB15K  --few 5 --embed_dim 100 --latent_num 5 --data_form Pre-Train --prefix QR_CR_latent5_FB15K_few5_exp1 --eval_ckpt 1000 --step test
-```
-* NELL
-```bash
-cd ./MARC_MetaR
-python main_QR_complex_relation.py --dataset NELL-One --data_path ./Nell-HiRe --few 1 --embed_dim 100 --latent_num 5 --data_form Pre-Train --prefix MetaR_QR_CR_latent5_Nellfew1_exp1 --eval_ckpt 1000 --step test 
-python main_QR_complex_relation.py --dataset NELL-One --data_path ./Nell-HiRe   --few 5 --embed_dim 100 --latent_num 5 --data_form Pre-Train --prefix MetaR_QR_CR_latent5_Nellfew5_exp1 --eval_ckpt 1000 --step test
-```
-* Wiki-One
-```bash
-cd ./MARC_MetaR
-python main_QR_complex_relation.py --dataset Wiki-One --data_path ./Wiki --few 1 --embed_dim 50 --latent_num 5 --data_form Pre-Train --prefix MetaR_QR_CR_latent5_Wikifew1_exp1 --eval_ckpt 1000 --step test 
-python main_QR_complex_relation.py --dataset Wiki-One --data_path ./Wiki   --few 5 --embed_dim 50 --latent_num 5 --data_form Pre-Train --prefix MetaR_QR_CR_latent5_Wikifew5_exp1  --eval_ckpt 1000 --step test 
-``` 
 
-[//]: # (WIKI)
-
-[//]: # (```bash)
-
-[//]: # (python main.py --dataset Wiki-One --data_path ./Wiki --few 5 --data_form Pre-Train --prefix np_rgcn_attn_planar_wiki_5shot_intrain_g_batch_1024_eval_8_0.503 --device 0 --batch_size 64 --flow Planar -dim 50 --g_batch 1024 --eval_batch 8 --eval_epoch 4000 --step test)
-
-[//]: # (```)
 
 
 
